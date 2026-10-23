@@ -4,17 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>公開用リポジトリ</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .item-wrapper{
+      display: flex;
+    }
+    li{
+      margin: 0 auto;
+      list-style: none;
+    }
+      .btn-outline-blue {
+  padding: 12px 28px;
+  background: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-outline-blue:hover {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+  </style>
 </head>
 <body>
   <h1>公開用リポジトリ</h1>
-  <li>
-  <a href="columns/index.html">columnsを使ったカラムレイアウト</a>
+  <div class="item-wrapper">
+  <li class="btn-outline-blue">
+  <a href="columns/index.html" >columnsを使ったカラムレイアウト</a>
 </li>
-<li>
-  <a href="donut-shop/index.html">felica Bread&Salad|トップページ</a>
+<li class="btn-outline-blue">
+  <a href="donut-shop/index.html" >felica Bread&Salad|トップページ</a>
 </li>
-<li>
-  <a href="lightbox/index.html">Lighboxの実装</a>
+<li class="btn-outline-blue">
+  <a href="lightbox/index.html" >Lighboxの実装</a>
   </li>
+  </div>
 </body>
 </html>
