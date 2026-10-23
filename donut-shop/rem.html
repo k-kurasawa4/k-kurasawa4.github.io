@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>remを使ってみる</title>
+  <style>
+    html{
+      font-size: 100%;/* デフォルト */
+    /* font-size: 62.5%; *//* 100%=16%は62.5%=10%です */
+    }
+    h1{
+      font-size: clamp(1.625rem, 0.938rem + 2.75vw, 3rem);
+    }
+    p{
+      font-size: clamp(1.25rem, 0.781rem + 1.88vw, 2.188rem);
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem, ipsum dolor.</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis quaerat architecto hic commodi repellendus. Corporis a commodi inventore fugiat delectus molestias animi eius aperiam. Qui neque et ipsum itaque.
+  </p>
+</body>
+</html>
