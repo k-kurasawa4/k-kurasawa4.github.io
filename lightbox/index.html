@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lighboxの実装</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    img{
+      vertical-align: bottom;
+      max-width: 100%;
+    }
+
+    .gallery{
+      width: 960px;
+      margin: 100px auto;
+      display: flex;
+      gap: 0 20px;
+    }
+  </style>
+<link rel="stylesheet" href="css/lightbox.css">
+
+</head>
+<body>
+  <!-- 画像の切り替え -->
+  <ul class="gallery">
+    <li><a href="img/01.jpg" data-lightbox="photo" data-title="画像の名前"><img src="img/01.jpg" alt=""></a></li>
+    <li><a href="img/02.jpg" data-lightbox="photo"><img src="img/02.jpg" alt=""></a></li>
+    <li><a href="img/03.jpg" data-lightbox="photo"><img src="img/03.jpg" alt=""></a></li>
+    <li><a href="img/04.jpg" data-lightbox="photo"><img src="img/04.jpg" alt=""></a></li>
+  </ul>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/lightbox.js"></script>
+
+</body>
+</html>
